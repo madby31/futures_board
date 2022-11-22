@@ -6,5 +6,5 @@
 Скопируйте файлы в папку. Если необходима отправка в Телеграм, откройте файл settings.txt
 
 ![Файл settings.txt](/pictures/Settings.png)
-
+<img src="/pictures/Settings.png" width="150" height="280">
 Скопируйте в файл токен и название канала. Можно добавить текст, с форматированием HTML.
