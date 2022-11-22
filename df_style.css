@@ -1,0 +1,23 @@
+/* includes alternating gray and white with on-hover color */
+.mystyle {
+    font-size: 18pt;
+    font-family: 'a_LCDNova', arial;
+    color: yellow;
+    border-collapse: collapse; 
+    border: 1px solid yellow;
+
+.mystyle td, th {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.mystyle tr:nth-child(even) {
+    background: LimeGreen;
+}
+
+.mystyle tr:hover {
+    background: Lime;
+    cursor: pointer;
+}
