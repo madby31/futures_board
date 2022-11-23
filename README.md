@@ -27,4 +27,4 @@
 
 ### Запуск без Python
 
-Для запуска без Python скачайте по [ссылке](https://disk.yandex.ru/d/Uc6eFpR0iPRqfg) и распакуйте в папку архив `futures_board_standalone.zip`. В папке запустите файл `futures_board.exe`. Настройки те же самые.
+Для запуска без Python скачайте по [ссылке](https://disk.yandex.ru/d/eYABs1DDMSi6kQ) и распакуйте в папку архив `futures_board_standalone.zip`. В папке запустите файл `futures_board.exe`. Настройки те же самые.
