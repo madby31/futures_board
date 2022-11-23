@@ -89,7 +89,7 @@ for nam in names:
 with open('input.txt', 'w') as file_name:
     file_name.writelines("%s\n" % line for line in datasave)
 df = pd.DataFrame()
-df['Название'] = ['Цена', 'Шаг цены', 'Стоимость шага цены', 'Сбор', 'Стоимость контракта', 'ГО, руб.', 'Возможная загрузка (Х*депо)', 'Доля шага в стоимости', 'Шаг с загрузкой депо']
+df['Название'] = ['Цена', 'Шаг цены', 'Стоимость шага цены', 'Сбор', 'Стоимость контракта', 'ГО, руб.', 'Возможная загрузка (Х*депо)', 'Доля шага в стоимости, %', 'Шаг с загрузкой депо, %']
 for ticket in ticket_data:
     tick, quartal = ticket_quartal[ticket]
     full_ticket = get_ticket(tick, quartal, today_month, today_year)
@@ -101,7 +101,7 @@ for ticket in ticket_data:
     loading = round(depo/float(data[14]),2)
     part_step = round((float(data[17])/depo*100),3)
     full_part_step = round((part_step*loading),3)
-    df[ticket] = [data[18], data[6], data[17], data[21], str(depo), data[14], str(loading), str(part_step)+'%', str(full_part_step)+'%']
+    df[ticket] =[ data[18], data[6], data[17], data[21], depo, data[14], loading, part_step, full_part_step]
 
 html_string = '''
 <html>
